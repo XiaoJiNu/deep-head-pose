@@ -22,6 +22,10 @@ To use please install [PyTorch](http://pytorch.org/) and [OpenCV](https://opencv
 To test on a video using dlib face detections (center of head will be jumpy):
 ```bash
 python code/test_on_video_dlib.py --snapshot PATH_OF_SNAPSHOT --face_model PATH_OF_DLIB_MODEL --video PATH_OF_VIDEO --output_string STRING_TO_APPEND_TO_OUTPUT --n_frames N_OF_FRAMES_TO_PROCESS --fps FPS_OF_SOURCE_VIDEO
+
+snapshot is pretrained model of deep-head-pose. 
+PATH_OF_DLIB_MODEL is dlib modle whice detect face, Download the dlib face model extract it and point the .dat file as PATH_OF_DLIB_MODEL
+
 ```
 To test on a video using your own face detections (we recommend using [dockerface](https://github.com/natanielruiz/dockerface), center of head will be smoother):
 ```bash
